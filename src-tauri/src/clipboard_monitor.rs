@@ -172,6 +172,12 @@ impl ClipboardMonitor {
             .show();
     }
 
+    #[cfg(target_os = "linux")]
+    fn send_notification(_app_handle: &AppHandle, _event: &SecurityEvent) {
+        // Notifications are not supported on Linux in this implementation
+        // due to varying desktop environment requirements
+    }
+
     pub fn stop(&self) {
         *self.running.lock().unwrap() = false;
     }
