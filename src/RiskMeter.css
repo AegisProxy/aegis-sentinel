@@ -1,0 +1,52 @@
+.risk-meter {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.risk-meter h2 {
+  margin: 0 0 1.5rem 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+}
+
+.meter-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.meter-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.meter-info p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .risk-meter {
+    background: #1f2937;
+  }
+
+  .risk-meter h2 {
+    color: #f3f4f6;
+  }
+
+  .meter-info {
+    background: #374151;
+  }
+
+  .meter-info p {
+    color: #d1d5db;
+  }
+}
